@@ -1,0 +1,114 @@
+/*  VARIABLES */
+
+:root {
+  /* colors */
+  --primary: hsl(0, 0%, 98%);
+  --secondary: hsl(0, 0%, 41%);
+  --clr-black: hsl(0, 0%, 8%);
+
+  /* typography */
+  --font-family: "Epilogue", sans-serif;
+  --font-size: 18px;
+  --fw-bold: 700;
+  --fw-md: 500;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--primary);
+}
+
+main {
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* NAV */
+nav {
+  margin: 1rem 0;
+}
+
+.nav-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+/* HERO SECTION */
+#hero {
+  width: 100%;
+}
+
+/* TEXT SECTION */
+.text-content {
+  margin: 1.5rem auto;
+}
+.text-content p {
+  text-align: center;
+  letter-spacing: var(--spacing);
+  padding: 0.5rem;
+  text-align: center;
+  opacity: 0.75;
+}
+
+/* BUTTONS */
+.btn {
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-center {
+  width: fit-content;
+  margin: 0.5rem auto;
+}
+
+/* Companies */
+.companies {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.btn-black {
+  color: var(--primary);
+  background-color: var(--clr-black);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 11px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
