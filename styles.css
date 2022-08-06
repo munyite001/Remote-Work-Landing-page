@@ -104,10 +104,8 @@ nav {
 .toggle-btn {
   height: 2rem;
   width: 2rem;
-  background-color: var(--clr-primary-4);
   border: none;
   border-radius: var(--radius);
-  color: var(--clr-grey-8);
 }
 
 .nav-body {
@@ -118,7 +116,7 @@ nav {
 /* Sidebar */
 .sidebar {
   z-index: 10000;
-  width: 50%;
+  width: 70%;
   height: 100%;
   position: fixed;
   top: 0;
@@ -159,15 +157,6 @@ nav {
   margin: 1rem 0;
 }
 
-.icon {
-  display: inline-block;
-  color: var(--Medium-Gray);
-  transform: rotate(180deg);
-  position: relative;
-  left: 0.5rem;
-  bottom: 0.2rem;
-}
-
 .sidebar-list li a {
   text-decoration: none;
   color: var(--Almost-Black) !important;
@@ -185,6 +174,12 @@ nav {
 }
 .show-nested-list {
   height: auto;
+}
+
+/* Up and Down Icons */
+
+.hide-icon {
+  width: 0;
 }
 
 
