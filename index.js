@@ -1,3 +1,7 @@
+//  Blurred Focus
+const main = document.querySelector('main');
+
+
 //  SIDEBAR
 const btn = document.querySelector('.toggle-btn');
 const close_btn = document.querySelector('.close-btn');
@@ -13,10 +17,12 @@ const icon = document.querySelector('.icon');
 
 //  Show and Hide Sidebar
 btn.addEventListener ('click',() => {
+    main.classList.add('blurred-focus');
     sidebar.classList.add('show-sidebar');
 });
 
 close_btn.addEventListener('click',() => {
+    main.classList.remove('blurred-focus');
     sidebar.classList.remove('show-sidebar');
 });
 
