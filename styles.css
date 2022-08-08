@@ -200,8 +200,12 @@ nav {
   box-shadow: var(--dark-shadow);
   border-radius: var(--radius);
 }
+.nested-common {
+  background-color: var(--clr-white);
+}
 
-.nested-spacing li{
+.nested-common li{
+
   margin: 0.5rem auto !important;
 }
 
