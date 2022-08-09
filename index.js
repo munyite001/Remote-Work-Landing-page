@@ -1,5 +1,5 @@
 //  Blurred Focus
-const main = document.querySelector('main');
+const body = document.querySelector('body');
 
 
 //  SIDEBAR
@@ -21,22 +21,27 @@ const nested_list_features_desktop= document.getElementById('nested_list_feature
 const nested_list_company_desktop = document.getElementById('nested_list_company_desktop');
 
 
-//Up and down icons
+//  Up and down icons Mobile
 const uparrow1 = document.getElementById('up-arrow1');
 const downarrow1 = document.getElementById('down-arrow1');
 const uparrow2 = document.getElementById('up-arrow2');
 const downarrow2 = document.getElementById('down-arrow2');  
 
+// Up and down icons desktop
+const updesktop1 = document.getElementById('d-up-f');
+const downdesktop1 = document.getElementById('d-down-f');
+const updesktop2 = document.getElementById('d-up-c');
+const downdesktop2 = document.getElementById('d-down-c');  
 
 
 //  Show and Hide Sidebar
 btn.addEventListener ('click',() => {
-    main.classList.add('blurred-focus');
+    body.classList.add('blurred-focus');
     sidebar.classList.add('show-sidebar');
 });
 
 close_btn.addEventListener('click',() => {
-    main.classList.remove('blurred-focus');
+    body.classList.remove('blurred-focus');
     sidebar.classList.remove('show-sidebar');
 });
 
@@ -77,11 +82,15 @@ toggle_features_desktop.addEventListener('click', () => {
     if (nested_list_features_desktop.classList.contains('show-nested-list-features')) 
     {
         nested_list_features_desktop.classList.remove('show-nested-list-features');
+        updesktop1.classList.add('hide-icon');
+        downdesktop1.classList.remove('hide-icon');
 
     }
     else
     {
         nested_list_features_desktop.classList.add('show-nested-list-features');
+        updesktop1.classList.remove('hide-icon');
+        downdesktop1.classList.add('hide-icon');
        
     }
 });
@@ -90,11 +99,15 @@ toggle_company_desktop.addEventListener('click', () => {
     if (nested_list_company_desktop.classList.contains('show-nested-list-company')) 
     {
         nested_list_company_desktop.classList.remove('show-nested-list-company');
+        updesktop2.classList.add('hide-icon');
+        downdesktop2.classList.remove('hide-icon');
 
     }
     else
     {
         nested_list_company_desktop.classList.add('show-nested-list-company');
+        updesktop2.classList.remove('hide-icon');
+        downdesktop2.classList.add('hide-icon');
         
     }
 });

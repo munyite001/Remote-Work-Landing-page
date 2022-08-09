@@ -76,13 +76,11 @@ main {
   border: 1px solid transparent;
 }
 
+/* Focus on side-bar */
 .blurred-focus {
-  z-index: 1000;
-  opacity: 0.9;
   background-color: var(--Medium-Gray);
+  opacity: 0.9;
 }
-
-
 
 /* MOBILE DESIGN */
 
@@ -227,7 +225,7 @@ nav {
 .auth-btns a {
   text-decoration: none;
   font-size: 15px;
-  color: var(--Almost-Black);
+  color: var(--Medium-Gray);
   font-weight: var(--fw-500);
   margin: 1rem;
 }
@@ -418,27 +416,18 @@ nav {
     margin-top: 5rem;
   }
 
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ACTIVE STATES */
+.auth:active {
+  cursor: pointer;
+  border: 2px solid var(--Almost-Black);
+}
+.btn-black:active {
+  color: var(--Almost-Black);
+  background-color: var(--clr-white);
+  border: 2px solid var(--Almost-Black);
+}
 
 /* Attribution */
 .attribution{
