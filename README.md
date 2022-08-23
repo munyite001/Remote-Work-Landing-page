@@ -14,7 +14,6 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 This was not an easy challenge. It is a junior level difficulty challenge, but, for a beginner tring to get their feet wet with js, it can really make you sweat.
