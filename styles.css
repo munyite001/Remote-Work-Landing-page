@@ -76,11 +76,6 @@ main {
   border: 1px solid transparent;
 }
 
-/* Focus on side-bar */
-.blurred-focus {
-  background-color: var(--Medium-Gray);
-  opacity: 0.9;
-}
 
 /* MOBILE DESIGN */
 
@@ -98,14 +93,9 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+ 
 }
 
-.toggle-btn {
-  height: 2rem;
-  width: 2rem;
-  border: none;
-  border-radius: var(--radius);
-}
 
 .nav-body {
   height: 0;
@@ -127,11 +117,22 @@ nav {
   box-shadow: var(--light-shadow);
 }
 
+/* Show the sidebar */
 .show-sidebar {
   transform: translate(0);
   opacity: 1 ;
   background-color: var(--clr-white);
   color: var(--Almost-Black) !important;
+}
+
+/* Side bar Toggle Buttons */
+
+/* Toggle btn */
+.toggle-btn {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: var(--radius);
 }
 
 /* Close Button */
@@ -144,6 +145,10 @@ nav {
 .close-btn {
   width: 2rem;
   height: 2rem;
+}
+
+.close-btn:hover,.toggle-btn:hover {
+  cursor: pointer;
 }
 
 /* Side Bar links */
@@ -172,44 +177,15 @@ nav {
   overflow: hidden;
 
 }
-/* Display Nested List Mobile */
+/* Display Nested List */
 .show-nested-list {
   width: auto;
   height: auto;
 }
-/* Display Nested List Desktop */
-.show-nested-list-features {
-  position: absolute;
-  width: auto;
-  height: 10rem;
-  top: 5rem;
-  left: 3rem;
-  padding: 1rem;
-  box-shadow: var(--dark-shadow);
-  border-radius: var(--radius);
-}
-.show-nested-list-company {
-  position: absolute;
-  width: auto;
-  height: 8rem;
-  top: 5rem;
-  left: 15rem;
-  padding: 1rem;
-  box-shadow: var(--dark-shadow);
-  border-radius: var(--radius);
-}
-.nested-common {
-  background-color: var(--clr-white);
-}
 
-.nested-common li{
 
-  margin: 0.5rem auto !important;
-}
-
-/* Up and Down Icons */
-
-.hide-icon {
+/* Hide up/down arrow */
+.hide-arrow {
   width: 0;
 }
 
@@ -338,6 +314,33 @@ nav {
     display: flex;
     list-style-type:none;
   }
+
+  /* links within the nested list on bigger devices */
+  .nav-list .nested-link .nested-list li {
+    margin: 1rem 0;
+
+  }
+
+
+/* The nested lists on bigger devices */
+  .nav-list .nested-link .show-nested-list {
+    border-radius: var(--radius);
+    position: absolute;
+    box-shadow: var(--dark-shadow);
+    top: 5rem;
+    padding: 1rem;
+    background-color: white;
+  }
+
+
+  /* Targeting the features list on bigger devices, for better positioning */
+  #features {
+    left: 3.5rem;
+  }
+
+
+
+
 
   .nav-list li {
     margin: auto 0.5rem;
