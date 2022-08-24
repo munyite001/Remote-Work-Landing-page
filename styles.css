@@ -123,7 +123,7 @@ nav {
   opacity: 1 ;
   background-color: var(--clr-white);
   color: var(--Almost-Black) !important;
-  max-width: 300px;
+  max-width: 300px; /*To prevent the sidebar from growing too much in bigger screens*/
 }
 
 /* Side bar Toggle Buttons */
@@ -217,7 +217,6 @@ nav {
 /* Rest of the Body*/
 .container {
   max-width: 500px;
-  /* margin-top: 1rem; */
   margin: 1rem auto;
   
 }
@@ -286,7 +285,7 @@ nav {
 @media (min-width:700px) {
 
   .show-sidebar {
-    display: none;
+    display: none; /*To close the sidebar by default on larger screens*/
   }
   .nav-container {
     display: flex;
@@ -377,7 +376,7 @@ nav {
 
   /* Rest Of The Body */
   .container {
-    max-width: 100rem;
+    max-width: 100rem;  /*Prevent the main content from growing further in bigger screens*/
     width: auto;
     margin: 5rem;
     display: flex;
