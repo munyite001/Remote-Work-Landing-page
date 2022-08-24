@@ -123,6 +123,7 @@ nav {
   opacity: 1 ;
   background-color: var(--clr-white);
   color: var(--Almost-Black) !important;
+  max-width: 300px;
 }
 
 /* Side bar Toggle Buttons */
@@ -215,8 +216,10 @@ nav {
 
 /* Rest of the Body*/
 .container {
-  margin-top: 1rem;
-  width: 100%;
+  max-width: 500px;
+  /* margin-top: 1rem; */
+  margin: 1rem auto;
+  
 }
 /* Hero Image */
 .hero-image {
@@ -282,6 +285,9 @@ nav {
 /* DESKTOP DESIGNS */
 @media (min-width:700px) {
 
+  .show-sidebar {
+    display: none;
+  }
   .nav-container {
     display: flex;
     flex-direction: row;
@@ -371,6 +377,7 @@ nav {
 
   /* Rest Of The Body */
   .container {
+    max-width: 100rem;
     width: auto;
     margin: 5rem;
     display: flex;
@@ -400,7 +407,7 @@ nav {
   /* Heading */
   .text-content h1 {
     font-size: 60px;
-    margin: 0rem 7rem 3rem 1rem;
+    margin: 0rem 1rem 3rem 1rem;
     font-weight: var(--fw-700);
   }
 
